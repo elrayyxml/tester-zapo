@@ -1,0 +1,59 @@
+{
+    "name": "@nexray/lib",
+    "version": "6.0.0-rc.77",
+    "description": "Simplicity WhatsApp Bot (zapo-js)",
+    "main": "lib/index.js",
+    "exports": {
+        ".": {
+            "require": "./lib/index.js",
+            "import": "./lib/index.mjs",
+            "default": "./lib/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "lib"
+    ],
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "zapo",
+        "zapo-js",
+        "nexray"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=20.9.0"
+    },
+    "scripts": {
+        "test": "node --test test/",
+        "typecheck": "node -e \"require('./lib/index.js')\""
+    },
+    "dependencies": {
+        "bytes": "^3.1.2",
+        "date-fns": "^4.1.0",
+        "dotenv": "^16.4.5",
+        "flatted": "^3.4.2",
+        "form-data": "^4.0.0",
+        "lodash": "^4.17.21",
+        "mime-types": "^2.1.35",
+        "node-webpmux": "^3.1.4",
+        "pino": "^9.0.0",
+        "qrcode": "^1.5.4",
+        "syntax-error": "^1.4.0"
+    },
+    "optionalDependencies": {
+        "@ffmpeg-installer/ffmpeg": "^1.1.0",
+        "fluent-ffmpeg": "^2.1.2",
+        "jimp": "^0.22.10",
+        "sharp": "^0.33.4"
+    },
+    "peerDependencies": {
+        "zapo-js": ">=1.8.0"
+    },
+    "peerDependenciesMeta": {
+        "zapo-js": {
+            "optional": true
+        }
+    }
+}

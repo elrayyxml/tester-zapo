@@ -1,0 +1,12 @@
+node_modules/
+*.log
+.DS_Store
+
+# Local zapo-js link used for development/testing
+node_modules/zapo-js
+
+# Session / auth artifacts
+session/
+sessions/
+.auth/
+*.sqlite
